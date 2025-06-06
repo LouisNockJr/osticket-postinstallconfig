@@ -41,7 +41,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/9sfjTYy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -50,56 +50,66 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 - Navigate to: **Admin Panel → Agents → Roles**
 
--	Add a new role, Supreme Admin, to define permission levels for agents.
+- Click **Add New Role**
+	- Name: **Supreme Admin**
+- Click **Permissions**
+	- Check All Permissions under the **Tickets** Tab
+ 	- Check All Permissions under the **Tasks** Tab
+- Click **Add Role** to Complete
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eR33QJv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 
-🏢 Step 3: Configure Departments (Ticket Visibility)
+🏢 Step 3: Configure Departments
 
 - Navigate to: **Admin Panel → Agents → Departments**
 
-- Examples:
-  - SysAdmins
-  - Help Desk
-  - Networking
+- Click **Add New Department**
+	- Name: **SysAdmins**
+ 		- Leave other fields in their current setup for now
+   		- Click **Create Dept** 	
 
-📌 Departments determine who can view/respond to which tickets.
+📌 Departments, for example: **SysAdmins**, **Help Desk**, **Networking**, are created for better ticket routing and visibility and determine who can view/respond to which tickets.
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yMcTctX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 
-👥 Step 4: Create Teams (Cross-Department Collaboration)
+👥 Step 4: Create Teams
 
 - Navigate to: **Admin Panel → Agents → Teams**
 
-- Create a team like Online Banking and assign agents from multiple departments.
+- Click **Add New Team**
+	- Name: **Online Banking**
+ 		- Leave other fields in their current setup for now
+   		- Click **Create Team** 	
+
+📌 Teams allow for Cross-Department Collaboration. You can add members from different departments to specific teams.
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/PvEMXDf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 
 ⚙️ Step 5: Allow Ticket Creation for All Users
 
-- Navigate to: **Admin Panel → Settings → User Settings**
-  - 🔲 Uncheck: Require registration and login to create tickets
+- Navigate to: **Admin Panel → Settings → User**
+  - 🔲 Uncheck: **Require registration and login to create tickets**
 
 ✅ This allows unregistered users to submit tickets through the public form.
 
@@ -107,7 +117,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/W9WRc4G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -116,28 +126,55 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 - Navigate to: **Admin Panel → Agents → Add New**
 
-- Example Agents:
-	- Jane (Department: SysAdmins)
-  - John (Department: Support)
+- 1st Agent to Create:
+	- Name: **Jane Doe**
+ 	- Email: **jane.doe@capsulecorp.com**
+  	- Username: **jane**
+  		- Click **Set Password**
+  		- Uncheck **Send the agent a password reset email** (for the purposes of this demonstration)
+  		- Set new password as **Password1** and confirm
+  		- Uncheck **Require password change at next login**
+  	 	- Set Password
+  	- Click **Access**
+  		- Assign the Primary Department as **SysAdmins** and the Role under **Supreme Admin**
+  	- Click **Teams**
+  		- Assign to the **Online Banking** Team and click **Add**
+  	 - Create
+  
+- 2nd Agent to Create:
+	- Name: **John Doe**
+ 	- Email: **john.doe@capsulecorp.com**
+  	- Username: **john**
+  		- Click **Set Password**
+  		- Uncheck **Send the agent a password reset email** (for the purposes of this demonstration)
+  		- Set new password as **Password1** and confirm
+  		- Uncheck **Require password change at next login**
+  	 	- Set Password
+  	- Click **Access**
+  		- Assign the Primary Department as **Support** and the Role under **View Only**
+  	 - Create
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/k6VYfpV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 
-👨‍👩‍👧 Step 7: Add Users (Customers)
+👨‍👩‍👧 Step 7: Add Users
 
-- Navigate to: **Agent Panel → Users → Add New**
+- Navigate to: **Agent Panel → Users**
 
-- Example Users:
-  - Karen
-  - Ken
+- Click **Add User**
 
-🗣️ These are the end users who will submit tickets to the system.
+- User to Create:
+	- Email Address: **mai@capsulecorp.com**
+ 	- Full Name: **Mai**
+    	- Add User
+
+🗣️ Users (or customers, clients, etc.) submit tickets to the system.
 
 </p>
 <br />
@@ -163,27 +200,43 @@ This tutorial outlines the post-install configuration of the open-source help de
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/k4HOihJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 
-⏱️ Step 8: Configure SLA Policies
+⏱️ Step 8: Configure SLA (Service Level Agreement) Policies
 
 - Navigate to: **Admin Panel → Manage → SLA**
 
-- Create SLA plans:
-  - **Sev-A:** Grace Period 1 hour, Schedule 24/7
-  - **Sev-B:** Grace Period 4 hours, Schedule 24/7
-  - **Sev-C:** Grace Period 8 hours, Schedule Business Hours
+- Click **Add New SLA Plan**
 
-📅 SLA policies help enforce ticket response deadlines.
+- Create SLA plans:
+  	- Name: **Sev-A**
+  		- Grace Period: **1 hour**
+  		- Schedule: **24/7**
+  	 	- Add Plan
+  		- 🔴 Critical Business Impact – your business has experienced a significant loss or degradation of services, requiring immediate attention.
+  	  
+  	- Name: **Sev-B**
+  		- Grace Period: **4 hours**
+  		- Schedule: **24/7**
+  	 	- Add Plan
+  		- 🟡 Moderate Business Impact – you have a loss or degradation of services, but your organization can still function.
+ 
+  	- Name: **Sev-C**
+  		- Grace Period: **8 hours**
+  		- Schedule: **Monday - Friday 8A - 5P with U.S. Holidays** (Business Hours)
+  	 	- Add Plan
+  		- ⚪️ Minimum Business Impact – you have an issue, but it has a small impact on your business.
+
+🏁 SLA policies help enforce ticket response deadlines and vary based on the agreement between vendor and customer.
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7W0uufL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -191,13 +244,29 @@ This tutorial outlines the post-install configuration of the open-source help de
 ❓ Step 9: Create Help Topics
 
 - Navigate to: **Admin Panel → Manage → Help Topics**
-  
-- Suggested Topics:
-  - Business Critical Outage
-  - Personal Computer Issues
-  - Equipment Request
-  - Password Reset
-  - Other
+
+- Click **Add New Help Topic**
+
+- Create new help topics
+	- Topic: **Business Critical Outage**
+ 		- Parent Topic: **Report a Problem**
+   		- Add Topic
+       
+	- Topic: **Personal Computer Issues**
+ 		- Parent Topic: **Report a Problem**
+   		- Add Topic
+       
+   	- Topic: **Equipment Request**
+   		- Parent Topic: **General Inquiry**
+   	 	- Add Topic
+   	    
+   	- Topic: **Password Reset**
+   		- Parent Topic: **Report a Problem**
+   	 	- Add Topic
+   	    
+   	- Topic: **Other**
+   		- Parent Topic: **General Inquiry**
+   	 	- Add Topic               
 
 🧾 Help Topics guide users to categorize their tickets properly.
 
